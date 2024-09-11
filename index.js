@@ -122,5 +122,11 @@ function getEvens(numbers) {
  * @returns {number[]} the odd numbers in the array
  */
 function getOdds(numbers) {
-  // TODO
+  number = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if ((numbers[i] % 2) != 0) {
+      number.push(numbers[i]);
+    }
+  }
+  return number;
 }
