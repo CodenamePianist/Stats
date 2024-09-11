@@ -70,7 +70,29 @@ function getMean(numbers) {
  * @returns {number} the smallest of the numbers
  */
 function getMin(numbers) {
-  // TODO
+  let i = 0;
+  let number = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] < number) {
+      number = numbers[i];
+    }
+    }
+    return number;
+  
+  /*
+  for (let i = 0; i < numbers.length; i++) {
+    if (number < numbers[i]) {
+      number = numbers[i];
+      //console.log(number);
+      //console.log(numbers[i]);
+    } else {
+      number = numbers[i + 1];
+    }
+    console.log(number);
+    return number;
+    
+  }
+  */
 }
 
 /**
