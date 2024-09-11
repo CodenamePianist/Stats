@@ -100,7 +100,24 @@ function getMax(numbers) {
  * @returns {number} the range of the numbers (max - min)
  */
 function getRange(numbers) {
-  
+  //This will get the max of the array
+  let i = 0;
+  let max = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > max) {
+      max = numbers[i];
+    }
+  }
+  //This will get the min of the array
+  let j = 0;
+  let min = numbers[0];
+  for (let j = 0; j < numbers.length; j++) {
+    if (numbers[j] < min) {
+      min = numbers[j];
+    }
+  }
+  let number = max - min;
+  return number;
 }
 
 /**
