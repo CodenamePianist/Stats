@@ -46,7 +46,11 @@ function getLength(numbers) {
  * @returns {number} the sum of the numbers
  */
 function getSum(numbers) {
-  // TODO
+  let number = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    number = number + numbers[i];
+  }
+  return number;
 }
 
 /**
@@ -54,7 +58,11 @@ function getSum(numbers) {
  * @returns {number} the mean of the numbers
  */
 function getMean(numbers) {
-  // TODO
+  let number = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    number = number + numbers[i];
+  }
+  return number / numbers.length;
 }
 
 /**
