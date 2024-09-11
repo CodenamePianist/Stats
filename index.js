@@ -91,7 +91,7 @@ function getMax(numbers) {
     if (numbers[i] > number) {
       number = numbers[i];
     }
-    }
+  }
     return number;
 }
 
@@ -100,7 +100,7 @@ function getMax(numbers) {
  * @returns {number} the range of the numbers (max - min)
  */
 function getRange(numbers) {
-  // TODO
+  
 }
 
 /**
@@ -108,7 +108,13 @@ function getRange(numbers) {
  * @returns {number[]} the even numbers in the array
  */
 function getEvens(numbers) {
-  // TODO
+  number = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if ((numbers[i] % 2) === 0) {
+      number.push(numbers[i]);
+    }
+  }
+  return number;
 }
 
 /**
