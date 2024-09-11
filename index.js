@@ -78,21 +78,6 @@ function getMin(numbers) {
     }
     }
     return number;
-  
-  /*
-  for (let i = 0; i < numbers.length; i++) {
-    if (number < numbers[i]) {
-      number = numbers[i];
-      //console.log(number);
-      //console.log(numbers[i]);
-    } else {
-      number = numbers[i + 1];
-    }
-    console.log(number);
-    return number;
-    
-  }
-  */
 }
 
 /**
@@ -100,7 +85,14 @@ function getMin(numbers) {
  * @returns {number} the largest of the numbers
  */
 function getMax(numbers) {
-  // TODO
+  let i = 0;
+  let number = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > number) {
+      number = numbers[i];
+    }
+    }
+    return number;
 }
 
 /**
